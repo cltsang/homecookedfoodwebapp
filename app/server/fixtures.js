@@ -37,7 +37,7 @@ if (Meals.find().count() === 0) {
   }, insertValidation());
   Meals.insert({
     mealTitle: "Beef Curry Rice",
-    mealDescription: "Japanese Curry Rice with Beef",
+    mealDescription: "Japanese thick and spicy Curry Rice with tender Beef",
     mealPrice: 45,
     availableToOrder: true,
     numberOfPortions: 2,
