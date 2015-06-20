@@ -3,7 +3,7 @@ body {
 }
 
 #dashboard-title {
-    padding: 50px;
+    padding-top: 50px;
 }
 
 .cook-profile-container {
@@ -66,3 +66,22 @@ body {
 .dashboard-subtitle {
     color: #ff5a5f
 }
+
+
+#order-eater {
+    width: 20%;
+}
+
+#order-address {
+    width: 60%;
+}
+
+#order-status {
+    width: 20%;
+}
+
+
+
+
+
+
