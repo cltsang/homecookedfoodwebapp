@@ -8,6 +8,7 @@ Router.route('/', function() {
   });
 });
 
+<<<<<<< HEAD
 Router.route('/create', function(){
   this.render('createMeal', {
     //
@@ -16,12 +17,10 @@ Router.route('/create', function(){
 
 Router.route('/meals', function() {
   this.render('mealsPage', {
-    //
-  });
-});
-
+=======
 Router.route('/dashboard', function() {
   this.render('dashboard', {
+>>>>>>> dashboard
     //
   });
 });
