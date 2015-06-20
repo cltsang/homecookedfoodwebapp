@@ -8,6 +8,9 @@ if (Meteor.isClient) {
         },
         'profilePicture': function() {
             return Meteor.user().profile.picture;
+        },
+        'userName': function(){
+            return Meteor.user().services.facebook.first_name
         }
     });
 }

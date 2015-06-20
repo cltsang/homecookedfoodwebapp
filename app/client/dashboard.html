@@ -1,37 +1,5 @@
 <template name="dashboard">
 
-
-<!-- Custom Nav Bar with Black Background for Dashboard Page -->
-  <nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="background-color: black;">
-      <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">Homey</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                      <a>{{>loginButtons}}</a>
-                  </li>
-                  <li>
-                      <a href="post.html">Become a Cook</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-  </nav>
-
-
   <h1>Dashboard</h1>
   <h2></h2>
 
@@ -39,18 +7,16 @@
   <div class="container">
     <div class="row">
 
-    <div class="col-md-3">
-      <p style="border:grey solid;">
-
+    <div class="col-md-3 light-border no-margin no-padding">
 
     {{#if currentUser}}
-        <img src={{profilePicture}} style="width:100%">
+        <img class="users-picture" src={{profilePicture}}>
     {{/if}}
-        <p>Username</p>
+        <p class="cooks-name">{{userName}}</p>
         <p>Verified Cook</p>
 
-      </p>
     </div>
+
 
     <div class="col-md-9">
       <p>
@@ -69,6 +35,37 @@
       </p>
     </div>
     </div>
+
+      <div class="row">
+          <div class="col-md-12 dashboard-spacer">
+
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-3 light-border no-margin no-padding">
+              <div class="jumbotron jumbotron-dashboard">
+                  <p class="cooks-name">test</p>
+              </div>
+              <p>{{userName}}</p>
+              <p>Verified Cook</p>
+          </div>
+          <div class="col-md-9">
+              <p>
+              <table>
+                  <tr>
+                      <th>Eaters</th>
+                  </tr>
+                  <tr>
+                      <td>Order 1</td>
+                      <td>Order 1's address</td>
+                  </tr>
+                  <tr>
+                      <td>Order 2</td>
+                  </tr>
+              </table>
+              </p>
+          </div>
+      </div>
   </div>
 
 

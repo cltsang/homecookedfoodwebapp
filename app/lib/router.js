@@ -1,5 +1,6 @@
 Router.configure({
-
+  layoutTemplate: 'homeyEatLayout',
+  homeyCookLayout: 'homeyCookLayout'
 });
 
 Router.route('/', function() {
@@ -21,7 +22,6 @@ Router.route('/meals', function() {
 });
 
 Router.route('/dashboard', function() {
-  this.render('dashboard', {
-    //
-  });
+  this.render('dashboard')
+  this.layout('homeyCookLayout');
 });
