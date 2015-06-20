@@ -3,7 +3,7 @@
         <div class="container centered-text">
             <div class="row">
                 <img src="http://i.imgur.com/2GTw75L.png" style="height:10%; width:10%;">
-                <h3 id="jumbotron-header">Add a meal to your cook book, {{userName}}.</h3>
+                <h2 id="jumbotron-header">Add a meal to your cook book, {{userName}}.</h2>
 
             </div>
         </div>
@@ -11,30 +11,30 @@
     <div class="container">
 
         <div class="row create">
-            <h1>What's your meal called?</h1>
+            <h2>What's your meal called?</h2>
             <input type="text"  id="meal-name-input" class="form-control" placeholder="e.g. Big Kahuna Burger." aria-describedby="basic-addon1">
 
 
         </div>
 
         <div class="row create">
-            <h1>Tell me a little more about it.</h1>
+            <h2>Tell me a little more about it.</h2>
 
                 <input type="text"  id="meal-description-input" class="form-control" placeholder="e.g. Top Japanese Beef. Tasty beverage recommended to wash it down." aria-describedby="basic-addon1">
 
         </div>
 
         <div class="row create">
-            <h1>What's the damage?</h1>
+            <h2>What's the damage?</h2>
 
                 <input type="number" id="meal-price-input" class="form-control" placeholder="e.g. $50" aria-describedby="basic-addon1">
 
         </div>
 
         <div class="row create">
-            <h1>Give it a face.</h1>
+            <h2>Give it a face.</h2>
                 <input type="file" name="..." class="myFileInput" id="meal-pic-selector">
-                <div class="imageView col-md-9">
+                <div class="imageView centered-text">
                 {{#each images}}
                     <div>
                         <a href="{{this.url}}" target="_blank"><img src="{{this.url}}" alt="" class="meal-thumbnail" /></a>
