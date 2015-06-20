@@ -14,7 +14,7 @@ if (Meals.find().count() === 0) {
     photo: "http://3.bp.blogspot.com/-94gzUBBb568/T_msmJLf8OI/AAAAAAAACYo/Jkz-7H2LKcs/s1600/IMG_4636.JPG",
     orderBy: "2015-06-21T19:00:00+19:00",
     deliverBy: "2015-06-21T19:00:00+19:00"
-  }, insertValidation(error, result));
+  }, insertValidation());
   Meals.insert({
     mealTitle: "Egg Fried Rice",
     mealDescription: "Brown rice fried in sesame oil with egg, peas, spring onion and chilli",
@@ -24,7 +24,7 @@ if (Meals.find().count() === 0) {
     photo: "http://farm1.static.flickr.com/169/464594323_a7bad3d728_o.jpg",
     orderBy: "2015-06-21T17:00:00+17:00",
     deliverBy: "2015-06-21T19:00:00+19:00"
-  }, insertValidation(error, result));
+  }, insertValidation());
   Meals.insert({
     mealTitle: "Singapore Noodles",
     mealDescription: "Fried Vermicelli with chicken, pork, onions, peppers, sesame seeds",
@@ -34,7 +34,7 @@ if (Meals.find().count() === 0) {
     photo: "http://www.curiousnut.com/wp-content/uploads/2015/01/Wonton-Noodles.jpg",
     orderBy: "2015-06-21T18:00:00+18:00",
     deliverBy: "2015-06-21T19:00:00+19:00"
-  }, insertValidation(error, result));
+  }, insertValidation());
   Meals.insert({
     mealTitle: "Beef Curry Rice",
     mealDescription: "Japanese Curry Rice with Beef",
@@ -44,7 +44,7 @@ if (Meals.find().count() === 0) {
     photo: "http://japaneseexperts.net/wp/wp-content/uploads/2015/06/ryusei-japanese-curry.jpeg",
     orderBy: "2015-06-21T17:00:00+17:00",
     deliverBy: "2015-06-21T18:00:00+18:00"
-  }, insertValidation(error, result));
+  }, insertValidation());
   Meals.insert({
     mealTitle: "Chicken with Cashewnuts",
     mealDescription: "Stir fried chicken breast, cashewnuts, and assorted vegetables",
@@ -54,5 +54,5 @@ if (Meals.find().count() === 0) {
     photo: "http://www.supermeal.pk/ext-resources/cropped-images/000/046/000046346_chicken-with-roasted-chasew-nut.jpg",
     orderBy: "2015-06-21T16:00:00+16:00",
     deliverBy: "2015-06-21T19:00:00+19:00"
-  }, insertValidation(error, result));
+  }, insertValidation());
 }

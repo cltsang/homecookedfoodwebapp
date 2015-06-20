@@ -23,6 +23,9 @@ Template.createMeal.events({
             mealObject.mealTitle = mealName;
             mealObject.mealDescription = mealDescription;
             mealObject.mealPrice = mealPrice;
+            mealObject.orderBy = Date();
+            mealObject.deliverBy = Date();
+            mealObject.availableToOrder = true;
             Meals.insert(mealObject, function (error, result) {
                 if(null != error) {
                     console.log(error.invalidKeys);

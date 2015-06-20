@@ -24,6 +24,7 @@ var mealSchema = new SimpleSchema({
     },
     photo: {
         type: String,
+        optional: true,
     },
     orderBy: {
         type: Date,
