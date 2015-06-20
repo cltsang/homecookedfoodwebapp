@@ -13,3 +13,9 @@ Router.route('/create', function(){
     //
   });
 });
+
+Router.route('/meals', function() {
+  this.render('mealsPage', {
+    //
+  });
+});
