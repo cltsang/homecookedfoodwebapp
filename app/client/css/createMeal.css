@@ -1,10 +1,41 @@
+#createMealForm {
+
+
+
+}
+
 .centered-text {
     text-align: center;
 }
 
 .meal-thumbnail {
-    width:50%;
+    width:90%;
 }
+
+
+.parentbox {
+    width:500px;
+    height:50%;
+
+    text-align: center;  /* align the inline(-block) elements horizontally */
+    font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.parentbox:before {      /* create a full-height inline block pseudo-element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.childbox {
+    display: inline-block;
+    vertical-align: middle;          /* vertical alignment of the inline element */
+    font: 16px/1 Arial, sans-serif;  /* reset the font property */
+
+    padding: 5px;
+}
+
 
 #createMeal {
   background-image: url("https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2013/12/05/Food/Images/food411386285091.jpg?uuid=v7Vr3l4CEeONJDHAFrl2sg");
@@ -40,4 +71,11 @@
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.shadow {
+-moz-box-shadow: 0 0 30px 5px #999;
+-webkit-box-shadow: 0 0 30px 5px #999;
 }

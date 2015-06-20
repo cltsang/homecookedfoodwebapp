@@ -2,56 +2,64 @@
     <div class="jumbotron" id="createMeal">
         <div class="container centered-text">
             <div class="row">
-                <img src="http://i.imgur.com/2GTw75L.png" style="height:10%; width:10%;">
+                <img src="http://i.imgur.com/2GTw75L.png" style="height:15%; width:15%;">
                 <h2 id="jumbotron-header">Add a meal to your cook book, {{userName}}.</h2>
 
             </div>
         </div>
     </div>
-    <div class="container">
 
-        <div class="row create">
-            <h2>What's your meal called?</h2>
-            <input type="text"  id="meal-name-input" class="form-control" placeholder="e.g. Big Kahuna Burger." aria-describedby="basic-addon1">
+    <!-- Create Meal Form -->
+    <div class="container" id="createMealForm">
 
+        <div class="row">
+            <div>
 
-        </div>
+                <div class="row create shadow">
+                    <h2>What's your meal called?</h2>
+                    <input type="text"  id="meal-name-input" class="form-control" placeholder="e.g. Big Kahuna Burger." aria-describedby="basic-addon1">
 
-        <div class="row create">
-            <h2>Tell me a little more about it.</h2>
+                </div>
 
-                <input type="text"  id="meal-description-input" class="form-control" placeholder="e.g. Top Japanese Beef. Tasty beverage recommended to wash it down." aria-describedby="basic-addon1">
+                <div class="row create shadow">
+                    <h2>Tell me a little more about it.</h2>
 
-        </div>
+                        <textarea type="text" id="meal-description-input" class="form-control" placeholder="e.g. Top Japanese Beef. Tasty beverage recommended to wash it down." aria-describedby="basic-addon1" rows="3"></textarea>
 
-        <div class="row create">
-            <h2>How much?</h2>
+                </div>
 
-                <input type="number" id="meal-price-input" class="form-control" placeholder="e.g. $50" aria-describedby="basic-addon1">
+                <div class="row create shadow">
+                    <h2>How much?</h2>
 
-        </div>
+                        <input type="number" id="meal-price-input" class="form-control" placeholder="e.g. $50" aria-describedby="basic-addon1">
 
-        <div class="row create">
-            <h2>Give it a face.</h2>
-                <input type="file" name="..." class="myFileInput" id="meal-pic-selector">
-                <div class="imageView centered-text">
-                {{#each images}}
-                    <div>
-                        <a href="{{this.url}}" target="_blank"><img src="{{this.url}}" alt="" class="meal-thumbnail" /></a>
+                </div>
+
+                <div class="row create shadow">
+                    <h2>Upload an image</h2>
+                        <input type="file" name="..." class="myFileInput" id="meal-pic-selector">
+                    <div class="imageView centered-text childbox">
+                        {{#each images}}
+                        <div>
+                            <a href="#" target="_blank"><img src="{{this.url}}" alt="" class="meal-thumbnail" /></a>
+                        </div>
+                        {{/each}}
                     </div>
-                {{/each}}
+
+                </div>
+
+                <div class="row create">
+                    <button class="btn" id="submit-meal">Create your meal</button>
+
+
+                </div>
+
+
             </div>
+
+
+
         </div>
-
-        <div class="row create">
-            <button class="btn" id="submit-meal">Submit</button>
-        </div>
-
-        <div class="row create">
-        </div>
-
-
-
     </div>
 
 </template>
