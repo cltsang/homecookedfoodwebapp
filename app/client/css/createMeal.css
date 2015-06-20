@@ -7,8 +7,10 @@
     width:50%;
 }
 
-.jumbotron {
-  background-image: url("http://splitshire.com/wp-content/uploads/2014/12/SplitShire-7446.jpg")
+#createMeal {
+  background-image: url("https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2013/12/05/Food/Images/food411386285091.jpg?uuid=v7Vr3l4CEeONJDHAFrl2sg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #jumbotron-header {
@@ -18,10 +20,7 @@
 .input {
   font-size: 30px;
 }
-.input-group {
 
-
-}
 .input-group-addon {
   background-color: black;
   color: white;
