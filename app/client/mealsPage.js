@@ -12,18 +12,18 @@ if (Meteor.isClient) {
           '<div class="col-xs-12 col-sm-6 col-md-4 eachMeal">' +
             '<div class="row mealTitle">' +
               '<div class="col-xs-8">' +
-                '<h2>' + 
+                '<h2 class="meals-page-h2">' +
                   allMeals[i].mealTitle +
                 '</h2>' +
               '</div>' +
               '<div class="col-xs-4">' +
-                '<h3>' +
+                '<h3 class="meals-page-h3">' +
                   allMeals[i].mealPrice +
                   '$' +
                 '</h3> ' +
               '</div>' +
               '<div class="col-xs-12 image">' +
-                '<img src="' +
+                '<img class="meal-picture" src="' +
                   allMeals[i].photo +
                   '">' +
               '</div>' +
@@ -56,27 +56,27 @@ if (Meteor.isClient) {
   });
 
 
-  Meteor.meals.find().forEach(addMeals());
+  Meals.find().forEach(addMeals());
 
     function addMeals() {
       $('.mealsList').children().append(
         '<div class="row">' +
           '<div class="col-xs-6">' +
-            '<h2>Title</h2>' +
+            '<h2 class="meals-page-h2">Title</h2>' +
           '</div>' +
           '<div class="col-xs-6">' +
-            '<h3>60$</h3> ' +
+            '<h3 class="meals-page-h3">60$</h3> ' +
           '</div>' +
         '</div>' +
         '<div class="row">' +
           '<div class="col-xs-12">' +
-            '<img src="image.jpg alt="an image here">' +
+            '<img class="meal-picture" src="image.jpg alt="an image here">' +
           '</div>' +
           '<div class="col-xs-12">' +
-            '<p>Chefname</p>' +
+            '<p class="meals-page-p">Chefname</p>' +
           '</div>' +
           '<div class="col-xs-12">' +
-            '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>' +
+            '<p class="meals-page-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>' +
           '</div>' +
           '<div class="col-xs-12">' +
             'Delivered @ 7PM' +

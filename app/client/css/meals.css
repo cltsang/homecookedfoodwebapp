@@ -5,14 +5,14 @@ body {
   font-size: 15px;
 }
 
-h2 {
+.meals-page-h2 {
   margin: 20px 0 20px 20px;
   text-align: left;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
 }
 
-h3 {
+.meals-page-h3 {
   font-size: 40px;
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -29,11 +29,11 @@ h3 {
   font-size: 18px;
 }
 
-p {
+.meals-page-p {
   margin: 10px;
 }
 
-img {
+.meal-picture {
   height: 300px;
 }
 
