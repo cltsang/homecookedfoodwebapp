@@ -1,0 +1,62 @@
+<head>
+  <title>Homecooked Foods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<template name="mealsPage">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="...">
+        </a>
+      </div>
+      <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Right</button>
+      </div>
+    </div>
+  </nav>
+
+</template>
+
+<template name="userPage">
+  <div class="header">
+    {{#if currentUser}}
+      <h1 class="header-text pull-left flipInY animated" id="user-h1">Hey {{displayUser}}!</h1>
+    {{/if}}
+      <button id="settings-button" class="top-right-button btn btn-fab pull-right"><i class="fa fa-cog"></i></button>
+  </div>
+  <div id="user-wrapper" class="container-fluid slide-up">
+    <div class="row-fluid" style="height:100%;">
+      <div id="settings" class="col-xs-12">
+        <div class="row fluid" style="margin-top:20px;">
+          <div class="col-xs-6">
+            <h2 class="settings-h2s">Show me users within...</h2>
+          </div>
+          <div class="col-xs-6">
+            <select name="options-distance" id="options-distance" class="form-control">
+              <option value="0.5">500 Metres</option>
+              <option value="0.75">750 Metres</option>
+              <option value="1">1000 Metres</option>
+              <option value="1.25">1250 Metres</option>
+              <option value="1.5">1500 Metres</option>
+            </select>            
+          </div>
+        </div>
+        <button id="logout" type="submit" button class="btn btn-raised" value="Logout">LOGOUT</button>
+        
+      </div>
+      <div class="col-xs-12" id="user-page-toggle-div">
+        <h2 id="status" class="sub-header">Let people know where you want to travel!</h2>
+
+        <div class="form-control-wrapper">
+            <input name="a-normal-input" class="form-control empty" id="bio">
+            <span class="material-input"></span>
+        </div>
+        {{#if currentUser}}
+          <img id="profile-picture" src={{profilePicture}}> 
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</template>
