@@ -2,6 +2,10 @@ body {
     background-color: #F5F5F5;
 }
 
+#dashboard-title {
+    padding-top: 50px;
+}
+
 .cook-profile-container {
     overflow: hidden;
     /*height: 200px;*/
@@ -62,3 +66,22 @@ body {
 .dashboard-subtitle {
     color: #ff5a5f
 }
+
+
+#order-eater {
+    width: 20%;
+}
+
+#order-address {
+    width: 60%;
+}
+
+#order-status {
+    width: 20%;
+}
+
+
+
+
+
+

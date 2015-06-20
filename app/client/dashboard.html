@@ -1,50 +1,30 @@
 <template name="dashboard">
 
-  <h1>Dashboard</h1>
+  <h1 id="dashboard-title">Dashboard</h1>
   <h2></h2>
 
 
   <div class="container">
     <div class="row">
+      <div class="col-md-3">
 
-    <div class="col-md-3 light-border no-margin no-padding cook-profile-container crop-image">
+        <div class="light-border no-margin no-padding cook-profile-container crop-image shadow">
 
-    {{#if currentUser}}
-        <img class="users-picture" src={{profilePicture}}>
-    {{/if}}
+        {{#if currentUser}}
+            <img class="users-picture" src={{profilePicture}}>
+        {{/if}}
 
-
-
-    </div>
-
-    <div class="col-md-9 light-border no-margin no-padding">
-        <div class="jumbotron jumbotron-dashboard">
-            <p class="cooks-name">Yo Stats</p>
         </div>
-        <p>Today</p>
-    </div>
-        <div class="row">
-            <p>test</p>
+        <div class="no-margin no-padding cook-profile-container light-border light-border-no-top">
+          <p class="cooks-name">{{userName}}</p>
+          <p>Verified Cook</p>
         </div>
-    </div>
-      <div class="row">
-          <div class="col-md-3 no-margin no-padding cook-profile-container light-border light-border-no-top">
-              <p class="cooks-name">{{userName}}</p>
-              <p>Verified Cook</p>
-          </div>
-          <div class="col-md-9">
-          </div>
-      </div>
 
-      <div class="row">
-          <div class="col-md-12 dashboard-spacer">
+        <div class="dashboard-spacer"></div>
 
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-3 light-border no-margin no-padding">
-              <div class="jumbotron jumbotron-dashboard">
-                  <p class="cooks-name">Yo Stats</p>
+        <div class="light-border no-margin no-padding">
+            <div class="jumbotron jumbotron-dashboard">
+              <p class="cooks-name">Summary</p>
               </div>
               <p>Today</p>
               <p>Meals Served</p>
@@ -52,21 +32,57 @@
               <p>Earnings</p>
               <p class="dashboard-subtitle">$120</p>
           </div>
+
+
+
+
+    </div>
+
+      <div class="col-md-9 light-border no-margin no-padding">
+
+
+          <div class="jumbotron jumbotron-dashboard">
+            <p class="cooks-name">Orders</p>
+          </div>
+
+          <!-- Orders Table -->
+
+
+
+
+
+        <!-- for loop-->
+          <div class="row">
+
+            <div class="col-md-4">
+              <p>Name</p>
+            </div>
+            <div class="col-md-4">
+              <p>Address</p>
+            </div>
+            <div class="col-md-4">
+              <p>Status</p>
+            </div>
+
+          </div>
+
+
+
+
+      </div>
+    </div>
+
+
+      <div class="row">
+          <div class="dashboard-spacer">
+
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-3">
+          </div>
           <div class="col-md-9">
-              <p>
-              <table>
-                  <tr>
-                      <th>Eaters</th>
-                  </tr>
-                  <tr>
-                      <td>Order 1</td>
-                      <td>Order 1's address</td>
-                  </tr>
-                  <tr>
-                      <td>Order 2</td>
-                  </tr>
-              </table>
-              </p>
+
           </div>
       </div>
   </div>
