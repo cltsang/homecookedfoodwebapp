@@ -43,7 +43,7 @@
             <div class="col-xs-8">
                 <div class="input-group">
                     <span class="input-group-addon">Price</span>
-                    <input type="file" name="..." class="myFileInput">
+                    <input type="file" name="..." class="myFileInput" id="meal-pic-selector">
                 </div>
             </div>
             <div class="col-xs-2"></div>
@@ -61,7 +61,7 @@
         <div class="imageView">
             {{#each images}}
                 <div>
-                    <a href="{{this.url}}" target="_blank"><img src="{{this.url}}" alt="" class="thumbnail" /></a>
+                    <a href="{{this.url}}" target="_blank"><img src="{{this.url}}" alt="" class="meal-thumbnail" /></a>
                 </div>
             {{/each}}
         </div>

@@ -15,3 +15,6 @@ twbs:bootstrap
 cfs:standard-packages
 cfs:gridfs
 aldeed:collection2
+cfs:ui
+reactive-dict
+reactive-var
