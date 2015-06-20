@@ -2,12 +2,29 @@ body {
     background-color: #F5F5F5;
 }
 
+.cook-profile-container {
+    overflow: hidden;
+    /*height: 200px;*/
+}
 .users-picture {
     max-width:100%;
 }
 
 .light-border {
     border:1px solid #dce0e0;
+}
+
+
+
+
+.crop-image {
+    overflow:hidden;
+    max-height:300px;
+}
+
+
+.light-border-no-top {
+    border-top:none;
 }
 
 .no-padding {
@@ -30,4 +47,7 @@ body {
 .jumbotron-dashboard {
     padding-top: 5px;
     padding-bottom:5px;
+}
+.dashboard-subtitle {
+    color: #ff5a5f
 }

@@ -7,13 +7,11 @@
   <div class="container">
     <div class="row">
 
-    <div class="col-md-3 light-border no-margin no-padding">
+    <div class="col-md-3 light-border no-margin no-padding cook-profile-container crop-image">
 
     {{#if currentUser}}
         <img class="users-picture" src={{profilePicture}}>
     {{/if}}
-        <p class="cooks-name">{{userName}}</p>
-        <p>Verified Cook</p>
 
     </div>
 
@@ -35,6 +33,14 @@
       </p>
     </div>
     </div>
+      <div class="row">
+          <div class="col-md-3 no-margin no-padding cook-profile-container light-border light-border-no-top">
+              <p class="cooks-name">{{userName}}</p>
+              <p>Verified Cook</p>
+          </div>
+          <div class="col-md-9">
+          </div>
+      </div>
 
       <div class="row">
           <div class="col-md-12 dashboard-spacer">
@@ -44,10 +50,13 @@
       <div class="row">
           <div class="col-md-3 light-border no-margin no-padding">
               <div class="jumbotron jumbotron-dashboard">
-                  <p class="cooks-name">test</p>
+                  <p class="cooks-name">Yo Stats</p>
               </div>
-              <p>{{userName}}</p>
-              <p>Verified Cook</p>
+              <p>Today</p>
+              <p>Meals Served</p>
+              <p class="dashboard-subtitle">2</p>
+              <p>Earnings</p>
+              <p class="dashboard-subtitle">$120</p>
           </div>
           <div class="col-md-9">
               <p>
