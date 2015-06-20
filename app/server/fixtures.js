@@ -1,6 +1,6 @@
 var insertValidation = function (error, result) {
   if(null != error) {
-    print(error.invalidKeys);
+    console.log(error.invalidKeys);
   }
 };
 
