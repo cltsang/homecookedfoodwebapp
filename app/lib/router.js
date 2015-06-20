@@ -10,9 +10,8 @@ Router.route('/', function() {
 });
 
 Router.route('/create', function(){
-  this.render('createMeal', {
-    //
-  });
+  this.render('createMeal')
+  this.layout('homeyCookLayout');
 });
 
 Router.route('/meals', function() {
