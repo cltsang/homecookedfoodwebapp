@@ -6,8 +6,11 @@ var displayName= function() {
 };
 
 Template.createMeal.helpers({
-    userName : displayName
-})
+    userName : displayName,
+    images: function() {
+        return Images.find();
+    }
+});
 
 Template.createMeal.events({
     'click #submit-meal': function(event, template){
@@ -25,5 +28,18 @@ Template.createMeal.events({
         } else {
             $('#jumbotron-header').text("One or more of your submitted fields was incorrect!");
         }
+    },
+
+    'change .myFileInput': function(event, template) {
+        FS.Utility.eachFile(event, function(file){
+            Images.insert(file, function (err, fileObj) {
+                if (err) {
+                    // handle err
+                } else {
+                    console.log(Images.find().fetch())
+
+                }
+            })
+        })
     }
 });

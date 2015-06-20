@@ -12,3 +12,5 @@ accounts-facebook
 iron:router
 mizzao:user-status
 twbs:bootstrap
+cfs:standard-packages
+cfs:gridfs
