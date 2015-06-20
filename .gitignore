@@ -1,2 +1,5 @@
 .meteor/local
 .meteor/meteorite
+.idea/workspace.xml
+.DS_Store
+

@@ -23,7 +23,7 @@ Template.createMeal.events({
             mealObject.mealTitle = mealName;
             mealObject.mealDescription = mealDescription;
             mealObject.mealPrice = mealPrice;
-            Meals.insert(mealObject)
+            Meals.insert(mealObject, insertValidation(error, result))
             $('#jumbotron-header').text("Meal created!");
         } else {
             $('#jumbotron-header').text("One or more of your submitted fields was incorrect!");
