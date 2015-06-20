@@ -7,7 +7,14 @@ if (Meteor.isClient) {
             //var ArrayOfCurrentOrders = Orders.find({cookId: Meteor.userId()}).fetch()
         },
         'profilePicture': function() {
+            // real facebook profile picture
             return Meteor.user().profile.picture;
+            /*
+            var cook = Cooks.findOne({id: '0'});
+            console.log(cook);
+            var picturePath = cook.profilePicPath;
+            return picturePath;
+            */
         },
         'userName': function(){
             return Meteor.user().services.facebook.first_name

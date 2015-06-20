@@ -2,9 +2,6 @@
  * Created by stephenparker on 20/06/2015.
  */
 (function(){
-
-
-
     ServiceConfiguration.configurations.remove({
         service: "facebook"
     });

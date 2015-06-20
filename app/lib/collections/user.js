@@ -11,6 +11,10 @@ var userSchema = new SimpleSchema({
     profilePicPath: {
         type: String,
     },
+    addressId: {
+        type: String,
+        optional: true,
+    },
 });
 
 Users.attachSchema(userSchema);
