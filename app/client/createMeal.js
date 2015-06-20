@@ -2,10 +2,16 @@
  * Created by stephenparker on 20/06/2015.
  */
 
+var newMealId = function() {
+    var maxId = Meals.findOne({}, {sort: {id: -1}}).id;
+    var newId = (parseInt(maxId) + 1).toString();
+    return newId;
+}
+
+var imageId;
+
 
 if (Meteor.isClient) {
-
-
     Template.createMeal.created = function(){
         this.fileUploaded = new ReactiveVar(false)
     };
@@ -35,12 +41,18 @@ if (Meteor.isClient) {
             var mealPrice = template.find('#meal-price-input').value;
 
             if(mealName.length > 4 && mealDescription.length > 4 && mealPrice > 0){
-                if(!template.find('#meal-pic-selector').value){
+                var image = template.find('#meal-pic-selector').value
+                if(!image){
                     console.log("You haven't chosen a picture to upload");
                 } else {
-                    mealObject.mealTitle = mealName;
-                    mealObject.mealDescription = mealDescription;
-                    mealObject.mealPrice = mealPrice;
+                    mealObject.id = newMealId();
+                    mealObject.title = mealName;
+                    //mealObject.mealDescription = mealDescription;
+                    mealObject.ingredientIds = ['0','1',];
+                    mealObject.price = mealPrice;
+                    mealObject.cookId = '0';
+
+                    mealObject.photoId = imageId;
                     Meals.insert(mealObject);
                     $('#jumbotron-header').text("Meal created!");
                 }
@@ -55,14 +67,17 @@ if (Meteor.isClient) {
             FS.Utility.eachFile(event, function(file){
                 if (file.type == "image/jpeg"){
                     file.test = "test";
+                    file.mealId = newMealId();
                     Images.insert(file, function (err, fileObj) {
-
                         if (err) {
                             // handle err
                         } else {
                             // do stuff
                             console.log(file);
-                            fileObj.update({$set: {'metadata.mealId': 'something'}});
+                            console.log(fileObj);
+                            console.log(file.mealId);
+                            imageId = fileObj._id;
+                            //fileObj.update({$set: {'metadata.mealId': newMealId}});
                         }
                     })
                 } else {

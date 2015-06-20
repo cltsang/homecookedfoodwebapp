@@ -9,6 +9,12 @@ if (Meteor.isClient) {
                 var meal = allMeals[i];
                 var cook = Cooks.findOne({id: meal.cookId});
 
+                var photoHtml = meal.photoPath
+                if (!photoHtml) {
+                    var image = Images.findOne({_id: meal.photoId});
+                    photoHtml = image.url();
+                }
+
                 htmlMeals.push(
                     '<div class="col-xs-12 col-sm-6 col-md-4 eachMeal">' +
                     '<div class="row mealTitle">' +
@@ -25,7 +31,7 @@ if (Meteor.isClient) {
                     '</div>' +
                     '<div class="col-xs-12 image">' +
                     '<img class="meal-picture" src="' +
-                    meal.photoPath +
+                    photoHtml +
                     '">' +
                     '</div>' +
                     '<div class="col-xs-12 cookName">' +
