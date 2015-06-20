@@ -1,0 +1,58 @@
+body {
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
+
+h2 {
+  margin: 20px 0 20px 20px;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-size: 40px;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+.delivered {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.mealDescription {
+  font-size: 18px;
+}
+
+p {
+  margin: 10px;
+}
+
+img {
+  height: 300px;
+}
+
+.image {
+  padding: 0;
+}
+
+.cookName {
+  font-style: italic;
+}
+
+.btn-default {
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #339933;
+  color: white;
+  border: none;
+}
+
+.mealTitle {
+  border-top: 1px dotted silver;
+}

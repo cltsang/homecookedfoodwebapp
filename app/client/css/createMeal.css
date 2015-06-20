@@ -3,6 +3,43 @@
 }
 
 .meal-thumbnail {
-    height:15%;
-    width:15%;
+    height:300px;
+    width:50%;
+}
+
+.jumbotron {
+  background-image: url("http://splitshire.com/wp-content/uploads/2014/12/SplitShire-7446.jpg")
+}
+
+#jumbotron-header {
+  color: white;
+}
+
+.input {
+  font-size: 30px;
+}
+.input-group {
+
+
+}
+.input-group-addon {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  border: white 1px;
+
+}
+
+.form-control {
+  width: 100%;
+  border-color: white;
+  font-size: 20px;
+  height: 40px;
+
+}
+
+.create {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
