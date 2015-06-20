@@ -1,0 +1,52 @@
+<template name="createMeal">
+    <div class="jumbotron">
+        <div class="container centered-text">
+            <div class="row">
+                <h1 id="jumbotron-header">Add a meal to your recipe book, {{userName}}</h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+                <div class="input-group">
+                    <span class="input-group-addon">Name</span>
+                    <input type="text"  id="meal-name-input" class="form-control" placeholder="e.g. Big Kahuna Burger." aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+                <div class="input-group">
+                    <span class="input-group-addon">Description</span>
+                    <input type="text"  id="meal-description-input" class="form-control" placeholder="e.g. Top Japanese Beef. Tasty beverage recommended to wash it down." aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+                <div class="input-group">
+                    <span class="input-group-addon">Price</span>
+                    <input type="number" id="meal-price-input" class="form-control" placeholder="e.g. $50" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+                <div class="input-group">
+                    <button type="button" class="btn btn-default" id="submit-meal">Submit</button>
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+    </div>
+
+</template>
