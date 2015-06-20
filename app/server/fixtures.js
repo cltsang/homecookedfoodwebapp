@@ -1,7 +1,3 @@
-var date = newDate();
-
-var ISODate = date.toISOString()
-
 if (Meals.find().count() === 0) {
   Meals.insert({
     mealTitle: "Herb Chicken",
