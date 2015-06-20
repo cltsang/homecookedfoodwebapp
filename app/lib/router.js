@@ -7,3 +7,9 @@ Router.route('/', function() {
     //
   });
 });
+
+Router.route('/create', function(){
+  this.render('createMeal', {
+    //
+  });
+});
