@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Created by stephenparker on 20/06/2015.
  */
@@ -10,7 +11,9 @@ if (Meteor.isClient) {
             return Meteor.user().profile.picture;
         }
     });
-}var displayName= function() {
+}
+=======
+var displayName= function() {
   return Meteor.user().services.facebook.first_name;
 };
 
@@ -28,3 +31,4 @@ Template.dashboard.helpers({
     },
 });
 
+>>>>>>> layoutCreateAMeal
