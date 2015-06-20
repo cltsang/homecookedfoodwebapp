@@ -15,7 +15,9 @@ var cookSchema = new SimpleSchema({
 
 Cooks.attachSchema(cookSchema);
 
-var getCook = function(cookId) {
-    var cook = Cooks.findOne({id: cookId});
-    return cook;
-}
+Meteor.methods({
+    getCook : function(cookId) {
+        var cook = Cooks.findOne({id: cookId});
+        return cook;
+    }
+});
