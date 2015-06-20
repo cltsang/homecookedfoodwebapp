@@ -42,8 +42,10 @@
     <div class="col-md-3">
       <p style="border:grey solid;">
 
-        <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" style="width:100%">
 
+    {{#if currentUser}}
+        <img src={{profilePicture}} style="width:100%">
+    {{/if}}
         <p>Username</p>
         <p>Verified Cook</p>
 
