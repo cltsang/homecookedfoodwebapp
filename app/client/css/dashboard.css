@@ -15,7 +15,18 @@ body {
 }
 
 
+.jumbotron-notifications {
+    padding-top:1px;
+    padding-bottom:1px;
+    padding-right:0px;
+    padding-left:0px;
 
+}
+
+.notifications-title {
+    margin-top:15px;
+    margin-bottom:15px;
+}
 
 .crop-image {
     overflow:hidden;
