@@ -18,6 +18,14 @@ var orderSchema = new SimpleSchema({
 
 Orders.attachSchema(orderSchema);
 
+Meteor.methods({
+    getNewId : function(collection) {
+        var maxId = collection.findOne({}, {sort: {id: -1}}).id;
+        var newId = (parseInt(maxId) + 1).toString();
+        return newId;
+    }
+});
+
 var createOrder = function(event, template) {
     var mealId = template.find('#mealId').value;
     var chiefId = template.find('#chiefId').value;

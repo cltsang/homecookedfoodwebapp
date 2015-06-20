@@ -22,6 +22,10 @@ var mealSchema = new SimpleSchema({
         type: String,
         optional: true,
     },
+    photoId: {
+        type: String,
+        optional: true,
+    },
     cookId: {
         type: String,
     },
