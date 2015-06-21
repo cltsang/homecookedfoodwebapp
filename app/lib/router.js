@@ -34,7 +34,7 @@ Router.route('/confirmation/:_id', {
   action: function () {
     var currentOrder = Orders.findOne({_id: this.params._id});
     Session.set('orderId', currentOrder);
-    this.render('confirmation');
+    this.render('thankYou');
   }
 });
 
