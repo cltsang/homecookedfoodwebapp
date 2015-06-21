@@ -19,3 +19,4 @@ cfs:ui
 reactive-dict
 reactive-var
 service-configuration
+dburles:google-maps
