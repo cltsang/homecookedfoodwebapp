@@ -37,3 +37,6 @@ Router.route('/cookbook', function() {
   this.render('myCookBook');
   this.layout('homeyCookLayout');
 });
+Router.route('/thankYou', function() {
+  this.render('thankYou')
+});
