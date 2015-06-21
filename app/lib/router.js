@@ -30,6 +30,9 @@ Router.route('/dashboard', function() {
   this.layout('homeyCookLayout');
 });
 
+Router.route('/confirmation', function() {
+  this.render('confirmation')
+});
 Router.route('/cookbook', function() {
   this.render('myCookBook');
   this.layout('homeyCookLayout');
