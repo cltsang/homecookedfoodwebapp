@@ -3,6 +3,11 @@ Router.configure({
   homeyCookLayout: 'homeyCookLayout'
 });
 
+Router.onBeforeAction(function() {
+    GoogleMaps.load();
+    this.next();
+}, { only: ['dashboard'] });
+
 Router.route('/', function() {
   this.render('landingPage', {
     //
