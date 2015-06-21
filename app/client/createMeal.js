@@ -54,8 +54,8 @@ if (Meteor.isClient) {
 
                     mealObject.photoId = imageId;
                     Meals.insert(mealObject);
-                    Router.go('/cookbook')
                     $('#jumbotron-header').text("Meal created!");
+                    Router.go('/cookbook')
                 }
             } else {
                 $('#jumbotron-header').text("One or more of your submitted fields was incorrect!");
