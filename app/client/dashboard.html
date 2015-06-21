@@ -64,7 +64,7 @@
             <div class="col-md-4">
               <p>
                 Address
-                <input type="button" name="answer" value="Map View" style="color:blue" id="hide"/>
+
 
               </p>
             </div>
@@ -74,8 +74,11 @@
 
           </div>
 
+          <input class="btn sm" type="button" name="answer" value="Map View" id="hide"/>
+            <p></p>
+
           <div class="map-super-container" id="map-view">
-            <div class="map-container">
+            <div class="map-container" style="width:100%">
               {{> googleMap name="ordersMap" options=mapOptions}}
             </div>
           </div>
@@ -89,10 +92,8 @@
 
             $(document).ready(function(){
               $("#hide").click(function(){
-                $("#map-view").hide();
-              });
-              $("#show").click(function(){
-                $("#map-view").show();
+                $("#map-view").toggle();
+                $(this).toggleClass('map-super-container')
               });
             });
 
