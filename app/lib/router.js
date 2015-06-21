@@ -30,9 +30,14 @@ Router.route('/dashboard', function() {
   this.layout('homeyCookLayout');
 });
 
-Router.route('/confirmation', function() {
-  this.render('confirmation')
+Router.route('/confirmation/:_id', {
+  action: function () {
+    var currentOrder = Orders.findOne({_id: this.params._id});
+    Session.set('orderId', currentOrder);
+    this.render('confirmation');
+  }
 });
+
 Router.route('/cookbook', function() {
   this.render('myCookBook');
   this.layout('homeyCookLayout');

@@ -16,12 +16,13 @@ if (Meteor.isClient) {
             else
                 maxId = maxId + 1;
             var orderId = (parseInt(maxId) + 1).toString();
-            Orders.insert({
+            var insertedOrder = Orders.insert({
                 id: orderId,
                 mealId: mealId,
                 userId: userId,
                 time: timeCreated,
             }, function(error, result) {});
+            Router.go('/confirmation/' + insertedOrder)
         }
 
     })
