@@ -63,9 +63,6 @@ if (Meteor.isClient) {
                     '<p>' + cook.name + ' <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></p>' +
                     '</div>' +
                     '<div class="col-xs-12 mealDescription">' +
-                    '<p>' +
-                    meal.ingredientIds +
-                    '</p>' +
                     '</div>' +
                     '<div class="col-xs-12 delivered">' +
                     'Delivered @ ' +
