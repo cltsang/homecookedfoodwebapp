@@ -49,10 +49,11 @@ if (Meteor.isClient) {
                     mealObject.title = mealName;
                     mealObject.ingredientIds = ['0','1',];
                     mealObject.price = mealPrice;
-                    mealObject.cookId = '0';
+                    mealObject.cookId = Meteor.userId();
 
                     mealObject.photoId = imageId;
                     Meals.insert(mealObject);
+                    Router.go('/cookbook')
                     $('#jumbotron-header').text("Meal created!");
                 }
             } else {

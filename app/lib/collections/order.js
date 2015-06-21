@@ -28,7 +28,6 @@ Meteor.methods({
 
 var createOrder = function(event, template) {
     var mealId = template.find('#mealId').value;
-    var chiefId = template.find('#chiefId').value;
     var userId = template.find('#userId').value;
     var timeCreated = Date();
 

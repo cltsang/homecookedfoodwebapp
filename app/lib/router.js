@@ -29,3 +29,8 @@ Router.route('/dashboard', function() {
   this.render('dashboard')
   this.layout('homeyCookLayout');
 });
+
+Router.route('/cookbook', function() {
+  this.render('myCookBook');
+  this.layout('homeyCookLayout');
+});
