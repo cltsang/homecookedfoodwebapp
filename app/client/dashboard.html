@@ -62,7 +62,11 @@
               <p>Name</p>
             </div>
             <div class="col-md-4">
-              <p>Address</p>
+              <p>
+                Address
+                <input type="button" name="answer" value="Map View" style="color:blue" id="hide"/>
+
+              </p>
             </div>
             <div class="col-md-4">
               <p>Status</p>
@@ -70,8 +74,29 @@
 
           </div>
 
+          <div class="map-super-container" id="map-view">
+            <div class="map-container">
+              {{> googleMap name="ordersMap" options=mapOptions}}
+            </div>
+          </div>
 
 
+          <script type="text/javascript">
+
+            function showDiv() {
+              document.getElementById('map-view').style.display = "block";
+            };
+
+            $(document).ready(function(){
+              $("#hide").click(function(){
+                $("#map-view").hide();
+              });
+              $("#show").click(function(){
+                $("#map-view").show();
+              });
+            });
+
+          </script>
 
       </div>
     </div>
@@ -91,8 +116,5 @@
       </div>
   </div>
 
-    <div class="map-container">
-        {{> googleMap name="ordersMap" options=mapOptions}}
-    </div>
 
 </template>
