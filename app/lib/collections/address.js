@@ -8,10 +8,10 @@ var addressSchema = new SimpleSchema({
     longAddress: {
         type: String,
     },
-    longitude: {
+    long: {
         type: Number,
     },
-    latitude: {
+    lat: {
         type: Number,
     },
 });

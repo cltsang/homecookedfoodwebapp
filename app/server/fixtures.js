@@ -39,6 +39,21 @@ if (Ingredients.find().count() === 0) {
   }, insertValidation);
 };
 
+if (Addresses.find().count() === 0) {
+  Addresses.insert({
+    id: "0",
+    longAddress: "",
+    lat:22.2832,
+    long: 114.1350,
+  }, insertValidation);
+  Addresses.insert({
+    id: '1',
+    longAddress: "",
+    lat: 22.2842,
+    long: 114.1378,
+  }, insertValidation)
+};
+
 if (Cooks.find().count() === 0) {
   Cooks.insert({
     id: "0",
@@ -51,7 +66,17 @@ if (Users.find().count() === 0) {
   Users.insert({
     id: "0",
     name: "Stephen Parker",
-    profilePicPath: "https://avatars2.githubusercontent.com/u/8068616?v=3&s=460",
+    profilePicPath: "https://avatars2.githubusercontent.com/u/8068616?v=3&s=400",
+  }, insertValidation);
+  Users.insert({
+    id: "1",
+    name: "Xavi Lozano Segarra",
+    profilePicPath: "https://avatars2.githubusercontent.com/u/3646960?v=3&s=400",
+  }, insertValidation);
+  Users.insert({
+    id: "2",
+    name: "Long Tsang",
+    profilePicPath: "https://avatars0.githubusercontent.com/u/4643855?v=3&s=400",
   }, insertValidation);
 };
 
