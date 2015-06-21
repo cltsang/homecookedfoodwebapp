@@ -61,3 +61,7 @@ body {
 .mealTitle {
   border-top: 1px dotted silver;
 }
+
+.shadow > .mealTitle {
+  border: none;
+}
