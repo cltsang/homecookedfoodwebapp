@@ -37,7 +37,6 @@ var createOrder = function(event, template) {
     Orders.insert({
         id: orderId,
         mealId: mealId,
-        chiefId: chiefId,
         userId: userId,
         time: timeCreated,
     }, function(error, result) {});

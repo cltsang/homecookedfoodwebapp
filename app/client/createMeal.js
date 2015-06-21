@@ -47,7 +47,6 @@ if (Meteor.isClient) {
                 } else {
                     mealObject.id = newMealId();
                     mealObject.title = mealName;
-                    //mealObject.mealDescription = mealDescription;
                     mealObject.ingredientIds = ['0','1',];
                     mealObject.price = mealPrice;
                     mealObject.cookId = '0';
