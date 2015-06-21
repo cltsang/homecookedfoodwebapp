@@ -1,0 +1,59 @@
+<template name="confirmation">
+
+    <!-- Create Meal Form -->
+    <div class="container" id="paymentDetails">
+
+        <div class="row">
+            <div class="row">
+                <h1>Order details</h1>
+            </div>
+            <div class="col-sm-5 eachMeal shadow create">
+                <div class="col-xs-12">
+                    <h2>Your meal</h2>
+                </div>
+                <div class="row mealTitle">
+                    <div class="col-xs-8">
+                        <h3 class="meals-page-h2">{{meal.title}}</h3>
+                    </div>
+                    <div class="col-xs-4">
+                        <h3 class="meals-page-h3">{{meal.price}}$50</h3>
+                    </div>
+                    <div class="col-xs-12 image">
+                        <img class="meal-picture" src="{{photoHtml}}">
+                    </div>
+                    <div class="col-xs-12 cookName">
+                        <p>{{cook.name}}<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></p>
+                    </div>
+                    <div class="col-xs-12 mealDescription">
+                        <p>{{meal.ingredientIds}}</p>
+                    </div>
+                    <div class="col-xs-12 delivered">
+                        Delivered @ 9PM
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-sm-offset-1 confirmationDetails">
+                <div class="row create shadow">
+                    <h2>Payment type</h2>
+                    <input type="text"  id="credi-card-input" class="form-control" placeholder="VISA xxxxxxxxxxxx0000" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="row create shadow">
+                    <h2>Any allergies or requirements?</h2>
+                    <input type="text"  id="requirements-input" class="form-control" placeholder="e.g. Lactose intolerant" aria-describedby="basic-addon1">
+
+                </div>
+
+                <div class="row create">
+                    <button class="btn" id="submit-meal">Confirm your order</button>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</template>
