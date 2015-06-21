@@ -64,5 +64,28 @@ if (Meteor.isClient) {
                 };
             }
         },
+
+        'populateOrders': function() {
+            var htmlOrders = [];
+
+            var meals = Meals.find({cookId: "0"});
+            var mealIds = [];
+            for(var i = 0; i < meals.count(); i++) {
+                mealIds.append(meals[i].id);
+            }
+            var orders = Orders.find({mealId:{$in: mealIds}});
+
+            for(var j = 0; j < orders.count(); j++) {
+                var meal = Meals.find({id: orders[j].mealId});
+                htmlOrders.push('<div>');
+                htmlOrders.push('<p> userId = ' + userId + '</p>');
+                htmlOrders.push('<p> mealName = ' + meal.title + '</p>');
+                htmlOrders.push('<p> price = ' + meal.price + '</p>');
+                htmlOrders.push('</div>');
+            }
+
+            return htmlOrders;
+        },
+
     });
 }
