@@ -131,4 +131,114 @@ if (Meals.find().count() === 0) {
     photoPath: "http://www.supermeal.pk/ext-resources/cropped-images/000/046/000046346_chicken-with-roasted-chasew-nut.jpg",
     cookId: "0",
   }, insertValidation);
+  Meals.insert({
+    id: "5",
+    title: "Hearty Curry Laksa",
+    ingredientIds : [
+      "1"," 2"
+    ],
+    price: 50,
+    photoPath: "http://media.themalaysianinsider.com/assets/uploads/articles/Curry_noodles_1.jpg",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "6",
+    title: "Somtam with Vegetables",
+    ingredientIds : [
+      "1"," 3"
+    ],
+    price: 40,
+    photoPath: "http://www.eatingthaifood.com/wp-content/uploads/2011/04/vegetables1.jpg",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "7",
+    title: "Tom Yum Goong",
+    ingredientIds : [
+      "1"," 6"
+    ],
+    price: 40,
+    photoPath: "http://www.boomboomme.com/thailand/newbie/images/diet_07.jpg",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "8",
+    title: "Pad Thai",
+    ingredientIds : [
+      "1"," 6"
+    ],
+    price: 50,
+    photoPath: "http://cornerbistrochiangmai.com/wp-content/uploads/2015/04/pad-thai.jpg",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "9",
+    title: "Vegetable Lasagna",
+    ingredientIds : [
+      "1"," 2"
+    ],
+    price: 60,
+    photoPath: "http://www.barilla.com/bulk_imported/A0_RI_ID1849.png",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "10",
+    title: "Korean Style Seafood Ramen",
+    ingredientIds : [
+      "2"," 4"
+    ],
+    price: 50,
+    photoPath: "http://www.mrstyleking.com/wp-content/uploads/2013/10/Best-Most-Authentic-Korean-Restaurant-Food-In-Singapore-6.jpg",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "11",
+    title: "Rice and Chicken Burger",
+    ingredientIds : [
+      "2"," 4"
+    ],
+    price: 50,
+    photoPath: "http://4.bp.blogspot.com/-46itb460K1U/Ts_M4TlNghI/AAAAAAAABsE/RnAmEEN5IBQ/s1600/Oz_Taw_401.jpg",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "12",
+    title: "Spicy Noodles with Spring Onions",
+    ingredientIds : [
+      "1"," 4"
+    ],
+    price: 40,
+    photoPath: "http://farm4.staticflickr.com/3715/9716487855_5d9dd903d2_c.jpg",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "13",
+    title: "Burmese Nibban Zay",
+    ingredientIds : [
+      "2"," 4"
+    ],
+    price: 40,
+    photoPath: "http://sinosoul.com/wp-content/uploads/2010/07/IMG_0308.JPG",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "14",
+    title: "Softie Dumplings",
+    ingredientIds : [
+      "4"," 5"
+    ],
+    price: 50,
+    photoPath: "http://photos.nomadicnotes.com/img/s7/v157/p2473090-4.jpg",
+    cookId: "0",
+  }, insertValidation);
+  Meals.insert({
+    id: "15",
+    title: "Home Bento Deluxe",
+    ingredientIds : [
+      "2"," 4"
+    ],
+    price: 80,
+    photoPath: "http://tokyodesu.com/wp-content/uploads/2013/02/800px-bento_de_luxe.jpg",
+    cookId: "0",
+  }, insertValidation);
 };
