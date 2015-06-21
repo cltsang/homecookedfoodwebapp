@@ -1,5 +1,12 @@
 if (Meteor.isClient) {
+  Template.mealsPage.events({
+      'click .orderButton':function(event, template){
+          var splitOrderString = this.substring(801);
+          var currentItem = splitOrderString.substring(0,16);
+          console.log(currentItem)
+      }
 
+  })
   Template.mealsPage.helpers({
     addedMeals: function () {
       var htmlMeals = [];
@@ -14,7 +21,6 @@ if (Meteor.isClient) {
             var image = Images.findOne({_id: meal.photoId});
             photoHtml = image.url();
         }
-
         htmlMeals.push(
           '<div class="col-xs-12 col-sm-6 col-md-4 eachMeal">' +
             '<div class="row mealTitle">' +
@@ -51,7 +57,7 @@ if (Meteor.isClient) {
                 'hours left to order' +
               '</div>' +
               '<div class="col-xs-12">' +
-                '<button type="button" class="btn btn-default orderButton">Order Now</button>' +
+                '<button type="button" class="btn btn-default orderButton order-item-'+ meal._id + '">Order Now</button>' +
               '</div>' +
             '</div>' +
           '</div>');
