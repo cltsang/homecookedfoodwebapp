@@ -46,11 +46,15 @@ body {
   font-style: italic;
 }
 
-.btn-default {
+.orderButton {
   width: 300px;
   margin-bottom: 20px;
   background-color: #339933;
   color: white;
+  border: none;
+}
+
+.orderButton:hover, .orderButton:focus {
   border: none;
 }
 
